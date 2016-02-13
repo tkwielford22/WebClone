@@ -1,0 +1,14 @@
+<div class="wrapper">
+	<div class="container">
+		<h1>{{ category.title }}</h1>
+
+		<div class="row">
+		  <div class="col-sm-2" ng-repeat="prod in products">
+		    <a ng-href="#/product/{{prod.id}}">
+		      <img class="product-image"src="{{prod.images[0].url.http}}" alt="{{prod.title}}" width="100%"/>
+		    <p>{{ prod.title }}</p>
+		    </a>
+		  </div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,271 @@
+<div class="main">
+  <div class="container" style="padding-left: 0px;padding-right: 0px;">
+     <div class="banner carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#crew" data-slide-to="0" class="active"></li>
+        <li data-target="#crew" data-slide-to="1"></li>
+        <li data-target="#crew" data-slide-to="2"></li>
+        <li data-target="#crew" data-slide-to="3"></li>
+        <li data-target="#crew" data-slide-to="4"></li>
+        <li data-target="#crew" data-slide-to="5"></li>
+        <li data-target="#crew" data-slide-to="6"></li>
+        <li data-target="#crew" data-slide-to="7"></li>
+        <li data-target="#crew" data-slide-to="8"></li>
+        <li data-target="#crew" data-slide-to="9"></li>
+        <li data-target="#crew" data-slide-to="10"></li>
+      </ol>
+      <div class="carousel-inner">
+            <div class="item active" data-id="0">
+              <img src="../images/VB-ILoveDonuts-Banner.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="1">
+              <img src="../images/VB-Apex-Isub-Home-Banner_new.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="2">
+              <img src="../images/cccd-whitelabel.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="3">
+              <img src="../images/2015-12-09-esmokeguru-1_2.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="4">
+              <img src="../images/VB-Wismec-Reuleaux-RX200-Home-Banner.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="5">
+              <img src="../images/VB-VS-VaporFlask-Home-Banner-v2.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="6">
+              <img src="../images/VB-Cultured-Home-Banner.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="7">
+              <img src="../images/VB-Cuttwood-Home-Banner.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="8">
+              <img src="../images/VB-Tesla2-Silk-Home-Banner.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="9">
+              <img src="../images/VB-Beast-Brew-2015-2.jpg" alt="Crew" class="img-responsive">
+            </div>
+            <div class="item" data-id="10">
+              <img src="../images/Vapor-Beast-Modzilla-Home-Main-Banner.jpg" alt="Crew" class="img-responsive">
+            </div>
+          </div>
+      </div> 
+      <div class="row main-content ">
+        <div class="col-md-9 left-col">
+         <div class="new-box">
+           <h2 class="new-header">
+           <a href="#/"onclick="slideLeft()"> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true" style="color: #C22636; font-size:1.2em;"></span></a>
+            NEW PRODUCTS
+           <a class="flex-next"href="#/"onclick="slideRight()"> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="color: #C22636;font-size:1.2em;"></span></a>
+          </h2>
+          <div class="new-products-slider">
+            <ul id="slider"style="width: 9600%; transition-duration: 0.6s; transform: translate3d(-0px, 0px, 0px);">
+              <li class="new-product"ng-repeat="prod in features">
+                <span class="new-tag">NEW</span>
+                <img src="{{prod.images[0].url.http}}">
+                <h2 class="product-name">{{ prod.title }}</h2>
+                <div class="price-box">
+                  <p class="old-price">{{prod.price.value}}</p>
+                  <p class="new-price"><span>${{prod.sale_price}}</span></p>
+                  <button type="button" class="button btn-cart" title="" data-original-title="" rel="tooltip"><span><span>Add to Cart</span></span></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+         </div>
+      </div>
+       <div class="col-md-3 right-col">
+          <div class="catagories-side">
+             <h2 class="new-header">CATEGORIES</h2>
+              <ul>
+                <li>
+                  <a href="#"><span>NEW</span> TO VAPING?</a> <span class="head"><a href="#"></a></span>
+                </li>
+                <li>
+                  <a href="#">ACCESSORIES?</a>
+                  <span class="head"><a href="#"></a></span>
+                </li>
+                <li>
+                  <a href="#">PVS & MODS</a>
+                  <span class="head"><a href="#"></a></span>
+                </li>
+                <li>
+                  <a href="#">E-LIQUID</a>
+                  <span class="head"><a href="#"></a></span>
+                </li>
+                <li>
+                  <a href="#">CLEAROMIZERS & TANKS</a>
+                  <span class="head"><a href="#"></a></span>
+                </li>
+                <li>
+                  <a href="#">REBUILDABLES</a>
+                  <span class="head"><a href="#"></a></span>
+                </li>
+                <li>
+                  <a href="#">DIY</a>
+                  <span class="head"><a href="#"></a></span>
+                </li>
+                <li><a href="#">STARTER KITS</a></li>
+                <li><a href="#"><span>DEALS</span></a></li>
+              </ul>
+          </div>
+        </div>
+  </div>   
+</div>
+
+
+ <script type="text/javascript">
+
+  var increase = 0;
+  function slideLeft() {
+    if(increase <= -850 ){
+      increase += 850;
+      $('#slider').animate({
+        'opacity': '100'
+      }, {
+          step: function () {
+              $(this).css({"transform": "translate3d(" + increase +"px, 0px, 0px)"});
+          },
+          duration: 1000,
+          easing: 'linear',
+          queue: false,
+          complete: function () {
+             
+          }
+      }, 'linear');
+    }
+    else{
+      increase = -1700;
+      $('#slider').animate({
+        'opacity': '100'
+      }, {
+          step: function () {
+              $(this).css({"transform": "translate3d(" + increase +"px, 0px, 0px)"});
+          },
+          duration: 1000,
+          easing: 'linear',
+          queue: false,
+          complete: function () {
+             
+          }
+      }, 'linear');
+    }
+  }
+  function slideRight() {
+    if(increase >= -850 ){
+      increase -= 850;
+      $('#slider').animate({
+        'opacity': '100'
+      }, {
+          step: function () {
+              $(this).css({"transform": "translate3d(" + increase +"px, 0px, 0px)"});
+          },
+          duration: 1000,
+          easing: 'linear',
+          queue: false,
+          complete: function () {
+             
+          }
+      }, 'linear');
+    }
+    else{
+       increase = 0;
+      $('#slider').animate({
+        'opacity': '100'
+      }, {
+          step: function () {
+              $(this).css({"transform": "translate3d(" + increase +"px, 0px, 0px)"});
+          },
+          duration: 1000,
+          easing: 'linear',
+          queue: false,
+          complete: function () {
+             
+          }
+      }, 'linear');
+    }
+  }
+  var current = $('.carousel-inner .item:first-child');
+  var currentID = current.data('id')
+  function removeAllIndicator(){
+    $('.carousel-indicators li').each(function(index){
+      if($(this).hasClass("active")){
+        $(this).toggleClass("active");
+      }
+    });
+  }
+  $('.carousel-indicators li').click(function(e){
+      var old;
+      if($(this).hasClass("active")){ }
+      else{
+        removeAllIndicator();
+        $(this).toggleClass("active");
+      }
+        $('.carousel-inner .item').each(function(index){
+           if($(this).hasClass( "active" )){
+            old = $(this);
+            }
+        });
+        e.stopPropagation();
+        var goTo = $(this).data('slide-to');
+        $('.carousel-inner .item').each(function(index){
+            if($(this).data('id') == goTo){
+              current = $(this);
+              currentID = current.data('id');
+              old.toggleClass("active", 1000);
+              $(this).toggleClass("active", 1000);
+            }
+        });
+
+        $('#gallery-carousel').carousel(goTo); 
+    });
+  setInterval(function(){
+    
+    if(currentID < 10){
+      currentID++;
+    }
+    else currentID = 0;
+    $('.carousel-inner .item').each(function(index){
+      if($(this).data('id') == currentID){
+        current.toggleClass("active", 1000);
+        $(this).toggleClass("active", 1000);
+        current=$(this);
+      }
+    });
+    $('.carousel-indicators li').each(function(index){
+      if($(this).hasClass("active")){
+        $(this).toggleClass("active");
+      }
+      if($(this).data('slide-to') == currentID){
+        $(this).toggleClass("active");
+      }
+       
+    });
+
+
+  }, 7000);
+
+  var src;
+   $(".social-media")
+        .mouseover(function() { 
+          src = $(this).attr("src").slice(0,-4);
+          src = src + '-inverse.png';
+          $(this).css("background", "black");
+          $(this).attr("src", src);
+        })
+        .mouseout(function() {
+          src = $(this).attr("src").slice(0,-12);
+          src = src + '.png';
+          $(this).css("background", "white");
+          $(this).attr("src", src);
+          $(this).attr("src", src);
+        });
+ 
+     
+   
+
+  </script>
+
+
+

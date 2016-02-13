@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body ng-app="storefrontApp" ng-cloak>
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="header">
+      <div class="red-header" style="background: #BD1021;width: 100vw; height: 12px;"></div>
+      <div class="navbar navbar-default top-header-nav" role="navigation">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="top-header">
+            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+              <div class="container">
+                <div class="row header-row">
+                  <div class="col-md-8">
+                     <ul class="header-nav">
+                      <li><a ng-href="#">Log In</a></li>
+                      <li style="border-right: 1px solid #9F9EAC;"><a ng-href="#">Blog</a></li>
+                      <li style="border-right: 1px solid #9F9EAC;"><a ng-href="#">My Cart</a></li>
+                      <li style="border-right: 1px solid #9F9EAC;"><a ng-href="#">Wishlist</a></li>
+                      <li style="border-right: 1px solid #9F9EAC;"><a ng-href="#">My Account</a></li>
+                      <li style="border-right: 1px solid #9F9EAC;"><a ng-href="#">Our Story</a></li>
+                      <li style="border-right: 1px solid #9F9EAC;"><a ng-href="#">Wholesale</a></li>
+
+                    </ul>
+                  </div>
+                  <div class="phone-list">
+                    <p><span class="free-shipping">FREE SHIPPING</span> OVER $35*</p>
+                    <p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 877-821-6062<span class="glyphicon glyphicon-blackboard" aria-hidden="true" style="padding-left: 5px;"></p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+           
+          </div>
+      </div>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5"style="padding-left:0;">
+              <img src="images/VaporBeast_logo.png">
+            </div>
+            <div class="col-md-5 search">
+              <div id="search-input">
+                <input id="search" type="text" value="" class="input-text" maxlength="128" autocomplete="off" placeholder="Search...">
+                <button><span class="glyphicon glyphicon-search" aria-hidden="true"></button>
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 main-nav">
+              <ul>
+                <li><a ng-href="#">DEAL OF THE DAY</a></li>
+                <li><a ng-href="#">NEW TO VAPING?</a></li>
+                <li><a ng-href="#">ACCESSORIES</a></li>
+                <li><a ng-href="#">PVS & MODS</a></li>
+                <li><a ng-href="#">E-LIQUID</a></li>
+                <li><a ng-href="#">CLEAROMIZERS & TANKS</a></li>
+                <li><a ng-href="#">DIY</a></li>
+                <li><a ng-href="#">STARTER KITS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+      
+
+   
+    <div ng-view=""></div>
+    <div class="container" style="padding-left: 0px;padding-right: 0px;">
+      <!-- move main section here -->
+    </div>
+    </div>
+    <div class="container" style="padding-left: 0px;padding-right: 0px;">
+      <div class="brand-container">
+        <div class="brands">
+          <h3>BRANDS</h3>
+        </div> 
+        <div class="brand-logos">
+           <a class="logo-left" href="#/"> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true" style="color: #000; font-size:1.5em;"></span></a>
+          <ul>
+            <li><a href="#/"><img src="images/brandslider_kanger.jpg"></a></li>
+            <li><a href="#/"><img src="images/brandslider_innokin.jpg"></a></li>
+            <li><a href="#/"><img src="images/brandslider_joyetech.jpg"></a></li>
+            <li><a href="#/"><img src="images/brandslider_aspire.jpg"></a></li>
+            <li><a href="#/"><img src="images/brandslider_sigelei.jpg"></a></li>
+          </ul>
+           <a class="logo-right" href="#/"> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="color: #000; font-size:1.5em;"></span></a>
+        </div> 
+      </div>
+      <div class="clear"></div>
+      <div class="bottom-banner">
+        <div class="col-md-4 secure-payment">
+          <h3>SECURE PAYMENT</h3>
+          <ul>
+            <li><a href="#/"><img src="images/visa.jpg"></a></li>
+            <li><a href="#/"><img src="images/amex_512.png"></a></li>
+            <li><a href="#/"><img src="images/master_card.jpg"></a></li>
+            <li><a href="#/"><img src="images/discover.jpg"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 follow-us">
+          <h3>FOLLOW US ON</h3>
+          <ul>
+            <li><a href="#/"><img class="social-media"src="images/facebook.png"></a></li>
+            <li><a href="#/"><img class="social-media" src="images/twitter.png"></a></li>
+            <li><a href="#/"><img class="social-media" src="images/google.png"></a></li>
+            <li><a href="#/"><img class="social-media" src="images/instagram_icon.png"></a></li>        
+            <li><a href="#/"><img class="social-media" src="images/youtube.png"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 newsletter">
+          <h3>NEWSLETTER</h3>
+          <div class="newsletter-subscribe">
+            <input type="text" id="newsletter">
+            <button type="submit"class="button"><span><span>Subscribe</span></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top">
+        <div class="col-md-3 company-info">
+          <h3>COMPANY & INFO</h3>
+          <ul>
+            <li><a href="#/">Our Story</a></li>
+            <li><a href="#/">About Us</a></li>
+            <li><a href="#/">Careers</a></li>
+            <li><a href="#/">New To Vaping?</a></li>
+            <li><a href="#/">Privacy Policy?</a></li>
+            <li><a href="#/">Warranty & Returns</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>CUSTOMER CARE</h3>
+          <ul>
+            <li><a href="#/"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 877-821-6062</a></li>
+            <li><a href="#/"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Returns & Exchanges</a></li>
+            <li><a href="#/"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Reviews & Advertising</a></li>
+            <li><a href="#/"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Vendor Inquiries</a></li>
+            <li><a href="#/"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> General Inquires</a></li>
+            <li><a href="#/">Customer Service Policies</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>WHOLESALE</h3>
+          <ul>
+            <li><a href="#/">877-821-6062</a></li>
+            <li><a href="#/">Wholesale Inquiries</a></li>
+            <li><a href="#/">Merchant Services</a></li>
+            <li><a href="#/">Watch Our Video</a></li>
+            <li><a href="#/">Wholesale Financing</a></li>
+            <li><a href="#/">Wholesale Program</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>OTHER STUFF</h3>
+          <ul>
+            <li><a href="#/">Age Policy</a></li>
+            <li><a href="#/">Become An Affiliate</a></li>
+            <li><a href="#/">Legal Statement</a></li>
+            <li><a href="#/">Site Map</a></li>
+            <li><a href="#/">Track My Order</a></li>
+            <li><a href="#/">Shipping Timetable</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="col-md-6">
+          <ul>
+            <li><a href="#/">Site Map</a></li>
+            <li><a href="#/">Affiliates</a></li>
+            <li><a href="#/">Search Terms</a></li>
+            <li><a href="#/">Advance Search</a></li>
+            <li><a href="#/">Orders and Returns</a></li>
+            <li><a href="#/">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <p>© 2013-2016 Smoke Free Technologies. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/services/moltin.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/store.js"></script>
+        <script src="scripts/controllers/category.js"></script>
+        <script src="scripts/controllers/product.js"></script>
+        <script src="scripts/controllers/cart.js"></script>
+        <script src="scripts/controllers/checkout.js"></script>
+        <!-- endbuild -->
+       <script src="https://js.moltin.com/v1"></script>
+       <!-- Latest compiled and minified JavaScript -->
+
+        
+</body>
+</html>
